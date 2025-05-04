@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Theme Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Theme Customizer</h1>
+            <p>Create your perfect theme with smooth animations!</p>
+        </header>
+
+        <div class="theme-showcase">
+            <div class="animated-card" id="card">
+                <div class="card-content">
+                    <h2>Your Custom Theme</h2>
+                    <p>Adjust the controls below to customize this card!</p>
+                    <button class="pulse-btn">Interactive Button</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <h3>Background Color</h3>
+                <div class="color-options">
+                    <div class="color-option" data-color="#3498db"></div>
+                    <div class="color-option" data-color="#2ecc71"></div>
+                    <div class="color-option" data-color="#e74c3c"></div>
+                    <div class="color-option" data-color="#9b59b6"></div>
+                    <div class="color-option" data-color="#f39c12"></div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Animation Type</h3>
+                <select id="animation-select">
+                    <option value="bounce">Bounce</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="flip">Flip</option>
+                    <option value="shake">Shake</option>
+                    <option value="rotate">Rotate</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <h3>Card Style</h3>
+                <div class="style-options">
+                    <button data-style="rounded" class="style-btn">Rounded</button>
+                    <button data-style="sharp" class="style-btn">Sharp</button>
+                    <button data-style="fancy" class="style-btn">Fancy</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Animation Speed</h3>
+                <input type="range" id="speed-control" min="0.5" max="2" step="0.1" value="1">
+                <span id="speed-value">1x</span>
+            </div>
+        </div>
+
+        <button id="trigger-animation" class="trigger-btn">Play Animation</button>
+        <button id="reset-preferences" class="reset-btn">Reset Preferences</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
